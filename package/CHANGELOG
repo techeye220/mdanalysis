@@ -31,6 +31,8 @@ Enhancements
     to specify what is on each line.  Eg atom_style = 'id type charge x y z'
     (Issue #1791)
   * Added periodic boundary condition option to HydrogenBondAnalysis (Issue #1188)
+  * HOLEtraj kwarg cpoint can now be an AtomGroup in order to
+    dynamically set CPOINT for each frame
 
 Fixes
   * Fixed MPI fork() warning when importing MDAnalysis in an Infiniband-enabled
