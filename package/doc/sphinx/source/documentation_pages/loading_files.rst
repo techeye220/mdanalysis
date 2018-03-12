@@ -100,19 +100,6 @@ A full list of valid values for these keywords are given in the below table.
 +------------------+-----------+----------+--------------+-----+
 | Autodock         | PDBQT     | Yes      | Yes          | r   |
 +------------------+-----------+----------+--------------+-----+
-| Amber            | TOP,      | Yes      | Yes          | r   |
-|                  | PRMTOP,   |          |              |     |
-|                  | PARM7     |          |              |     |
-|                  +-----------+----------+--------------+-----+
-|                  | TRJ,      | No       | Yes          | r   |
-|                  | MDCRD     |          |              |     |
-|                  +-----------+----------+--------------+-----+
-|                  | INPCRD,   | No       | Yes          | r   |
-|                  | RESTRT    |          |              |     |
-|                  +-----------+----------+--------------+-----+
-|                  | NCDF,     | Minimal  | Yes          | r/w |
-|                  | NC        |          |              |     |
-+------------------+-----------+----------+--------------+-----+
 | CHARMM           | PSF       | Yes      | No           | r   |
 |                  +-----------+----------+--------------+-----+
 |                  | DCD       | Minimal  | Yes          | r/w |
@@ -128,14 +115,6 @@ A full list of valid values for these keywords are given in the below table.
 | GAMESS           | GMS,      |          | Yes          | r   |
 |                  | LOG,      |          |              |     |
 |                  | OUT       |          |              |     |
-+------------------+-----------+----------+--------------+-----+
-|  Gromacs         | GRO       | Yes      | Yes          | r/w |
-|                  +-----------+----------+--------------+-----+
-|                  | TPR       | Yes      | No           | r   |
-|                  +-----------+----------+--------------+-----+
-|                  | TRR       | Minimal  | Yes          | r/w |
-|                  +-----------+----------+--------------+-----+
-|                  | XTC       | Minimal  | Yes          | r/w |
 +------------------+-----------+----------+--------------+-----+
 | Hoomd            | GSD       | Yes      | No           | r   |
 |                  +-----------+----------+--------------+-----+
@@ -162,6 +141,7 @@ A full list of valid values for these keywords are given in the below table.
    "", ":ref:`Ascii trajectory <load_amber_trj>`", "TRJ, MDCRD", "No", "Yes", "r"
    "", ":ref:`Ascii restart <load_amber_restart>`", "INPCRD, RESTRT", "No", "Yes", "r"
    "", ":ref:`NetCFD trajectory <load_amber_ncdf>`", "NCDF, NC", "Minimal", "Yes", "r/w"
+   ":ref:`Autodock <load_pdbqt>`", ":ref:`Autodock PDBQT files <load_pdbqt>`", "PDBQT", "Yes", "Yes", "r"
    ":ref:`Gromacs <loading_gromacs>`", ":ref:`Gromos <load_gro>`", "GRO", "Yes", "Yes", "r/w"
    "", ":ref:`TPR file <load_tpr>`", "TPR", "Yes", "No", "r"
    "", ":ref:`TRR trajectory <load_trr>`", "TRR", "Minimal", "Yes", "r/w"
@@ -173,6 +153,7 @@ A full list of valid values for these keywords are given in the below table.
    :hidden:
 
    ./loading_files/amber
+   ./loading_files/autodock
    ./loading_files/gromacs
    
 
