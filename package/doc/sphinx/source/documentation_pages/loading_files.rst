@@ -2,9 +2,10 @@
 Loading your data
 ##################
 
-
+   
 Basic Usage
 ===========
+
 
 MDAnalysis aims to read any and all molecular simulation data,
 from whatever files you provide to it.
@@ -61,6 +62,9 @@ In this example, frames from `traj1.trr` and `traj2.trr` will be concatenated wh
 Supported formats and further details
 =====================================
 
+
+
+
 This table lists all currently supported file formats in MDAnalysis,
 whether they can act as either Topology or Trajectory files,
 as well as links to the relevant documentation pages.
@@ -68,9 +72,6 @@ In general MDAnalysis will try and extract all available data from a
 given file, for full details of what is extracted from each file format
 consult the relevant documentation page.
 
-
-Specifying format
------------------
 
 Generally the format of a file is automatically detected from the extension,
 for example a file called `system.xyz` is recognised as an XYZ file.
@@ -83,10 +84,6 @@ A full list of valid values for these keywords are given in the below table.
 	  format detection will work around this.
 
 
-.. _Supported formats:
-
-Table of supported formats
---------------------------
 
 +------------------+-----------+----------+--------------+-----+
 | Source           | Extension | Topology | Trajectory   | I/O |
@@ -132,7 +129,7 @@ Table of supported formats
 |                  | LOG,      |          |              |     |
 |                  | OUT       |          |              |     |
 +------------------+-----------+----------+--------------+-----+
-| Gromacs          | GRO       | Yes      | Yes          | r/w |
+|  Gromacs         | GRO       | Yes      | Yes          | r/w |
 |                  +-----------+----------+--------------+-----+
 |                  | TPR       | Yes      | No           | r   |
 |                  +-----------+----------+--------------+-----+
@@ -154,4 +151,29 @@ Table of supported formats
 +------------------+-----------+----------+--------------+-----+
 | Tripos           | MOL2      | Yes      | Yes          | r/w |
 +------------------+-----------+----------+--------------+-----+
+
+
+.. _Supported formats:
+
+.. csv-table:: Table of supported formats
+   :header: "Source", "Name", "Format", "Topology", "Trajectory", "I/O"
+
+   ":ref:`Amber <loading_amber>`", ":ref:`Topology <load_amber_top>`", "TOP, PRMTOP, PARM7", "Yes", "Yes", "r"
+   "", ":ref:`Ascii trajectory <load_amber_trj>`", "TRJ, MDCRD", "No", "Yes", "r"
+   "", ":ref:`Ascii restart <load_amber_restart>`", "INPCRD, RESTRT", "No", "Yes", "r"
+   "", ":ref:`NetCFD trajectory <load_amber_ncdf>`", "NCDF, NC", "Minimal", "Yes", "r/w"
+   ":ref:`Gromacs <loading_gromacs>`", ":ref:`Gromos <load_gro>`", "GRO", "Yes", "Yes", "r/w"
+   "", ":ref:`TPR file <load_tpr>`", "TPR", "Yes", "No", "r"
+   "", ":ref:`TRR trajectory <load_trr>`", "TRR", "Minimal", "Yes", "r/w"
+   "", ":ref:`XTC trajectory <load_trr>`", "XTC", "Minimal", "Yes", "r/w"
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   ./loading_files/amber
+   ./loading_files/gromacs
+   
+
 
