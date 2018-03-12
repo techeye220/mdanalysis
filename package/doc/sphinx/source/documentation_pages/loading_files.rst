@@ -98,8 +98,6 @@ A full list of valid values for these keywords are given in the below table.
 |                  | ENT,      |          |              |     |
 |                  | XPDB      |          |              |     |
 +------------------+-----------+----------+--------------+-----+
-| Autodock         | PDBQT     | Yes      | Yes          | r   |
-+------------------+-----------+----------+--------------+-----+
 | CHARMM           | PSF       | Yes      | No           | r   |
 |                  +-----------+----------+--------------+-----+
 |                  | DCD       | Minimal  | Yes          | r/w |
@@ -115,10 +113,6 @@ A full list of valid values for these keywords are given in the below table.
 | GAMESS           | GMS,      |          | Yes          | r   |
 |                  | LOG,      |          |              |     |
 |                  | OUT       |          |              |     |
-+------------------+-----------+----------+--------------+-----+
-| Hoomd            | GSD       | Yes      | No           | r   |
-|                  +-----------+----------+--------------+-----+
-|                  | XML       | Yes      | No           | r   |
 +------------------+-----------+----------+--------------+-----+
 | IBIsCO / YASP    | TRZ       | Minimal  | Yes          | r/w |
 +------------------+-----------+----------+--------------+-----+
@@ -146,13 +140,15 @@ A full list of valid values for these keywords are given in the below table.
    "", ":ref:`TPR file <load_tpr>`", "TPR", "Yes", "No", "r"
    "", ":ref:`TRR trajectory <load_trr>`", "TRR", "Minimal", "Yes", "r/w"
    "", ":ref:`XTC trajectory <load_trr>`", "XTC", "Minimal", "Yes", "r/w"
-
+   ":ref:`Hoomd <load_hoomd>`", ":ref:`XML Topology <load_xml>`", "XML", "Yes", "Yes", "r"
+   "", ":ref:`Global simulation data? <load_gsd>`", "GSD", "No", Yes", "r"
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
    ./loading_files/amber
+   ./loading_files/hoomd
    ./loading_files/autodock
    ./loading_files/gromacs
    
