@@ -1,4 +1,4 @@
-.. _load_hooomd:
+.. _load_hoomd:
 
 ###################################
 Loading Hoomd files with MDAnalysis
