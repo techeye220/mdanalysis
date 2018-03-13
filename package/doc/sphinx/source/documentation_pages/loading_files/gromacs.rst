@@ -21,6 +21,9 @@ When used as a topology file in a Universe, MDAnalysis will read
 and guess ``masses`` and ``types`` based on the names of atoms.
 The ``segid`` for of all atoms is set to "``SYSTEM``".
 
+For implementation details see
+:mod:`MDAnalysis.topology.GROParser`.
+
 
 Writing GRO files
 ^^^^^^^^^^^^^^^^^
@@ -133,32 +136,3 @@ Writing TRR and XTC files
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Anything interesting about writing these files
-
-
-Class Reference
-===============
-
-The implementation details of the various classes are given below.
-
-Parsers
--------
-
-.. autoclass:: MDAnalysis.topology.GROParser.GROParser
-   :members:
-
-.. autoclass:: MDAnalysis.topology.TPRParser.TPRParser
-   :members:
-      
-
-Readers
--------
-
-.. autoclass:: MDAnalysis.coordinates.GRO.GROReader
-   :members:
-
-
-Writers
--------
-
-.. autoclass:: MDAnalysis.coordinates.GRO.GROWriter
-   :members:
