@@ -114,8 +114,6 @@ A full list of valid values for these keywords are given in the below table.
 |                  | LOG,      |          |              |     |
 |                  | OUT       |          |              |     |
 +------------------+-----------+----------+--------------+-----+
-| IBIsCO / YASP    | TRZ       | Minimal  | Yes          | r/w |
-+------------------+-----------+----------+--------------+-----+
 | LAMMPS           | DATA      | Yes      | Yes          | r/w |
 |                  +-----------+----------+--------------+-----+
 |                  | DCD       | Minimal  | Yes          | r/w |
@@ -142,14 +140,16 @@ A full list of valid values for these keywords are given in the below table.
    "", ":ref:`XTC trajectory <load_trr>`", "XTC", "Minimal", "Yes", "r/w"
    ":ref:`Hoomd <load_hoomd>`", ":ref:`XML Topology <load_xml>`", "XML", "Yes", "Yes", "r"
    "", ":ref:`Global simulation data? <load_gsd>`", "GSD", "No", Yes", "r"
+   ":ref:`IBIsCO and YASP trajectories <load_ibisco>`", ":ref:`TRZ <load_ibisco>`", "Minimal", "Yes", "r/w"
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
    ./loading_files/amber
-   ./loading_files/hoomd
    ./loading_files/autodock
+   ./loading_files/hoomd
+   ./loading_files/ibisco
    ./loading_files/gromacs
    
 
